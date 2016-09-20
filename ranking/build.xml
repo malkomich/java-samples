@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="rankings" default="compilar" basedir=".">
+	<description>Builds, tests, and runs the project Rankings.
+	</description>
+	<!-- Definicion de las propiedades del proyecto -->
+	<property name="baseDir" location="./target" />
+	<property name="buildPath" location="${baseDir}\classes\" />
+	<property name="authors" value="juangon,oscfern" />
+	<property name="informeCobertura" location="${baseDir}\site\cobertura" />
+
+	<!-- Establece el tipo de ejecucion segun que S.O. se ejecuta (Windows/Linux) -->
+	<condition property="executable" value="cmd" else="bash">
+		<os family="windows" />
+	</condition>
+	<condition property="arg" value="/c" else="-c">
+		<os family="windows" />
+	</condition>
+
+	<target name="limpiar" description="Elimina los archivos de compilacion y pruebas">
+		<delete verbose="false" dir="${baseDir}" />
+	</target>
+
+	<target name="compilar" description="Compila las clases de dominio del proyecto">
+		<exec dir="." executable="${executable}">
+			<arg value="${arg}" />
+			<arg value="mvn" />
+			<arg line="compile test-compile" />
+		</exec>
+	</target>
+
+	<target name="ejecutarTestsTDD" description="Ejecuta los tests Unitarios">
+		<exec dir="." executable="${executable}">
+			<arg value="${arg}" />
+			<arg value="mvn" />
+			<arg line="test -Dtest=*Unitario" />
+		</exec>
+	</target>
+
+	<target name="ejecutarTestsEnAislamiento" description="Ejecuta los tests de Aislamiento con Mock Objects">
+		<exec dir="." executable="${executable}">
+			<arg value="${arg}" />
+			<arg value="mvn" />
+			<arg line="test -Dtest=TestAislamiento" />
+		</exec>
+	</target>
+
+	<target name="ejecutar" depends="compilar"
+		description="Ejecuta una pequeña prueba implementada en la clase Launcher">
+		<java classname="tds.rankings.Launcher">
+			<classpath>
+				<path location="${buildPath}" />
+			</classpath>
+		</java>
+	</target>
+
+	<target name="obtenerInformeCobertura"
+		description="Guarda en formato html los analisis de cobertura en la ruta indicada">
+		<exec dir="." executable="${executable}">
+			<arg value="${arg}" />
+			<arg value="mvn" />
+			<arg line="cobertura:cobertura" />
+		</exec>
+		<echo message="Informe de cobertura en ${informeCobertura}" />
+	</target>
+
+</project>

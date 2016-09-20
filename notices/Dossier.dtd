@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!ELEMENT dossier ( noticia* ) >
+	<!ELEMENT noticia (categoria,enlaceAlContenido,fechaPublicacion,fuente,titular)>
+	<!ELEMENT categoria ( #PCDATA ) >
+	<!ELEMENT enlaceAlContenido ( #PCDATA ) >
+	<!ELEMENT fechaPublicacion ( #PCDATA ) >
+	<!ELEMENT fuente ( #PCDATA ) >
+	<!ELEMENT titular (#PCDATA ) >

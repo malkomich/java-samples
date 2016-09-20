@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<dossier>
+    <noticia>
+        <categoria>Nacional</categoria>
+        <enlaceAlContenido>http://nacional.com/</enlaceAlContenido>
+        <fechaPublicacion>domingo 02 febrero 2014 12:40:10</fechaPublicacion>
+        <fuente>Naaa</fuente>
+        <titular>El Pais Vasco recula</titular>
+    </noticia>
+    <noticia>
+        <categoria>Internacional</categoria>
+        <enlaceAlContenido>http://www.aleee.com</enlaceAlContenido>
+        <fechaPublicacion>miércoles 05 febrero 2014 18:32:00</fechaPublicacion>
+        <fuente>fuenteInt</fuente>
+        <titular>Alemania se va del presupuesto</titular>
+    </noticia>
+    <noticia>
+        <categoria>Internacional</categoria>
+        <enlaceAlContenido>http://www.nytimes.com/</enlaceAlContenido>
+        <fechaPublicacion>jueves 06 febrero 2014 06:40:35</fechaPublicacion>
+        <fuente>New York Times</fuente>
+        <titular>Cuts in Hospital</titular>
+    </noticia>
+    <noticia>
+        <categoria>Sociedad</categoria>
+        <enlaceAlContenido>http://www.elsocial.com/</enlaceAlContenido>
+        <fechaPublicacion>domingo 26 enero 2014 23:52:20</fechaPublicacion>
+        <fuente>El otro</fuente>
+        <titular>Altercados en la gran via</titular>
+    </noticia>
+    <noticia>
+        <categoria>Economia</categoria>
+        <enlaceAlContenido>http://elpais.com/</enlaceAlContenido>
+        <fechaPublicacion>martes 04 febrero 2014 12:40:10</fechaPublicacion>
+        <fuente>El Pais</fuente>
+        <titular>Sube el iva</titular>
+    </noticia>
+    <noticia>
+        <categoria>Deporte</categoria>
+        <enlaceAlContenido>http://www.marca.com/</enlaceAlContenido>
+        <fechaPublicacion>lunes 20 enero 2014 07:51:00</fechaPublicacion>
+        <fuente>Marca</fuente>
+        <titular>Los Wolves de Ricky se cuelan en la final</titular>
+    </noticia>
+    <noticia>
+        <categoria>Cultura</categoria>
+        <enlaceAlContenido>http://cultura.elpais.com/cultura/</enlaceAlContenido>
+        <fechaPublicacion>sábado 01 febrero 2014 12:40:10</fechaPublicacion>
+        <fuente>El Pais</fuente>
+        <titular>Pablo Berger candidato a los premios de cine</titular>
+    </noticia>
+</dossier>
